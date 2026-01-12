@@ -1,0 +1,38 @@
+name: research-agent
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11 # Modern, stable runtime for ML/data tooling
+  - pip # Install packages not available via conda-forge
+  - jupyterlab # Interactive notebooks for exploration and demos
+  - ipywidgets # Interactive controls in notebooks
+  - numpy # Core numerical arrays
+  - pandas # Tabular data processing
+  - scipy # Scientific computing algorithms
+  - scikit-learn # Classical ML and preprocessing
+  - statsmodels # Statistical modeling and tests
+  - sympy # Symbolic math when needed
+  - matplotlib # Base plotting
+  - seaborn # Statistical plotting
+  - plotly # Interactive visualizations
+  # - rich # Nice CLI output for tools/agents
+  - tqdm # Progress bars
+  - pydantic # Data validation and typing
+  - pyyaml # Read/write YAML configs
+  # - requests # Simple HTTP client
+  # - httpx # Async-friendly HTTP client
+  # - beautifulsoup4 # HTML parsing for scraping
+  # - lxml # Fast XML/HTML parsing backend
+  # - sqlalchemy # DB abstraction/ORM
+  # - duckdb # Lightweight analytical database
+  # - polars # Fast DataFrame library
+  # - pyarrow # Arrow columnar format + Parquet IO
+  # - openpyxl # Read/write .xlsx
+  # - xlrd # Read legacy .xls
+  - pip:
+      - python-dotenv # Load .env secrets locally
+      # - tenacity # Retry/backoff for flaky calls
+      # - tiktoken # Tokenization utilities
+      - openai # OpenAI API client
+      # - fastapi # Lightweight API server for agent services
+      # - uvicorn # ASGI server for FastAPI
